@@ -73,8 +73,11 @@ A 100
 Programa:
 
 MOV AX, 0005
+
 MOV BX, 0003
+
 ADD AX, BX
+
 INT 20
 
 Luego se verificó con:
@@ -84,9 +87,13 @@ U 100 109
 Observaciones:
 
 Se observó la correspondencia entre instrucciones y código máquina
+
 MOV AX,0005 -> B8 05 00
+
 MOV BX,0003 -> BB 03 00
+
 ADD AX,BX -> 03 C3
+
 INT 20 -> CD 20
 
 Captura:
